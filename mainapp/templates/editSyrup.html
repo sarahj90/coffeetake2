@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>editSyrup</title>
+  </head>
+  <body>
+     <form class="" action="{% url 'editSyrup' syrup_id=syrup.id %}" method="post">
+      {% csrf_token %}
+      {{form.as_p}}
+      <input type="submit" name="" value="edit">
+
+     </form>
+  </body>
+</html>
